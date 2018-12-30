@@ -1,15 +1,18 @@
 // create the variables
 
-// create the function to generate a random number
+//make an array with all letters available to guess
 
-// create an onclick event that will recognize the number the user enters
+// create the function to generate a random letter
 
-// compare the user entered number to the computer generated number
+// create an onclick event that will recognize the letter the user enters
+//convert the letter to lowercase, to make sure it matches the computer letter
 
-//if the numbers are equal to eachother, add one point to wins
+// compare the user entered letters to the computer generated letters
 
-// if the numbers are not equal, add a point to loses
+//if the letters are equal to eachother, add one point to wins
+
+// if the letters are not equal, add a point to loses
 
 //update the number of guesses left
 
-//display and update the numbers already guessed
+//display and update the letters already guessed
