@@ -1,8 +1,15 @@
 // create the variables
+var wins = 0;
+var loses = 0;
+var guessesLeft = 10;
+var guessesSoFar = [];
 
 //make an array with all letters available to guess
+var computerOptions = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
-// create the function to generate a random letter
+// have the computer generate a random letter
+var compGues = computerOptions[Math.floor(Math.random() * computerOptions.length)];
+
 
 // create an onclick event that will recognize the letter the user enters
 //convert the letter to lowercase, to make sure it matches the computer letter
