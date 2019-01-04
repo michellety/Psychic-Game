@@ -30,29 +30,40 @@ document.onkeyup = function(event) {
     
     }
     
-    
     //if the letters are not equal
     else {
         //add the user guessed letter to the array
         guessesSoFar.push(userGuess);
         guessesLeft--;
 
-
         // if the letters are not equal after 10 guesses, add a point to loses
         //update the number of guesses left
         if (guessesLeft == 0) {
             losses++;
             //reset the game to play again
+            guessesLeft = 10;
+            guessesSoFar = [];
+            //computer chooses a new number
+            compGuess = computerOptions[Math.floor(Math.random() * computerOptions.length)];
             
+        }
     }
+    // //display and update the letters already guessed
+    // //modify the innerHTML
+    // document.getElementById("wins").innerHTML = wins;
+    // document.getElementById("losses").innerHTML = losses;
+    // document.getElementById("guessesLeft").innerHTML = guessesLeft;
+    // document.getElementById("guessesSoFar").innerHTML = guessesSoFar;
+    
 
-    //display and update the letters already guessed
-    //modify the innerHTML
-    document.getElementById("wins").innerHTML = wins;
-    document.getElementById("losses").innerHTML = losses;
-    document.getElementById("guessesLeft").innerHTML = guessesLeft;
-    document.getElementById("guessesSoFar").innerHTML = guessesSoFar;
-}
+    //display the results to the browser
+    var results = 
+    "<p>Wins: " + wins + "</p>" +
+    "<p>Losses: " + losses + "</p>" +
+    "<p>Guesses Left: " + guessesLeft + "</p>" +
+    "<p>Your Guesses so far: " + guessesSoFar + "</p>";
+
+    document.getElementById("game").innerHTML = results;
 
 
 };
