@@ -22,6 +22,9 @@ document.onkeyup = function(event) {
     //if the letters are equal to eachother, add one point to wins
     if (userGuess === computerGuess){
         wins++;
+        //reset the game to play again
+        guessesLeft = 10;
+        
     
     }
     
@@ -32,10 +35,12 @@ document.onkeyup = function(event) {
         guessesSoFar.push(userGuess);
         guessesLeft--;
 
+
         // if the letters are not equal after 10 guesses, add a point to loses
         //update the number of guesses left
         if (guessesLeft == 0) {
             losses++;
+            //reset the game to play again
             
     }
 
