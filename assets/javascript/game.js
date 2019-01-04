@@ -8,12 +8,6 @@ var wins = 0,
 //make an array with all letters available to guess
 var computerOptions = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
-
-//push the generated letter into the computerGuess array
-computerGuess.push(compGuess);
-
-
-
 document.onkeyup = function(event) {
     // have the computer generate a random letter
     var compGuess = computerOptions[Math.floor(Math.random() * computerOptions.length)];
