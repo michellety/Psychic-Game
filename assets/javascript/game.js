@@ -40,4 +40,12 @@ document.onkeyup = function(event) {
     }
 
     //display and update the letters already guessed
+    //modify the innerHTML
+    document.getElementById("wins").innerHTML = wins;
+    document.getElementById("losses").innerHTML = losses;
+    document.getElementById("guessesLeft").innerHTML = guessesLeft;
+    document.getElementById("guessesSoFar").innerHTML = guessesSoFar;
+}
+
+
 };
