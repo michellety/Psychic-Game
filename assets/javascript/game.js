@@ -9,18 +9,23 @@ var wins = 0,
 var computerOptions = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 document.onkeyup = function(event) {
-    // have the computer generate a random letter
-    var compGuess = computerOptions[Math.floor(Math.random() * computerOptions.length)];
-
     // create an onclick event that will recognize the letter the user enters
     //create a variable to store the user entered letter
     var userGuess = event.key;
-    // compare the user entered letters to the computer generated letters
-    
-    //if the letters are equal to eachother, add one point to wins
-    
-    // if the letters are not equal, add a point to loses
 
+    // have the computer generate and store a random letter
+    var compGuess = computerOptions[Math.floor(Math.random() * computerOptions.length)];
+
+    // compare the user entered letters to the computer generated letters
+    //if the letters are equal to eachother, add one point to wins
+    if (userGuess=== computerGuess){
+        wins++;
+    }
+    // if the letters are not equal, add a point to loses
+    else {
+        losses++;
+    }
+    
     //update the number of guesses left
 
     //display and update the letters already guessed
