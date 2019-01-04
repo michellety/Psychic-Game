@@ -1,6 +1,6 @@
 // create the variables
 var wins = 0,
-    loses = 0,
+    losses = 0,
     guessesLeft = 10,
     guessesSoFar = [],
     computerGuess = [];
@@ -16,7 +16,7 @@ document.onkeyup = function(event) {
     //create a variable to store the user entered letter
     var userGuess = event.key;
     // compare the user entered letters to the computer generated letters
-
+    
     //if the letters are equal to eachother, add one point to wins
     
     // if the letters are not equal, add a point to loses
