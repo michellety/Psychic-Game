@@ -24,7 +24,9 @@ document.onkeyup = function(event) {
         wins++;
         //reset the game to play again
         guessesLeft = 10;
-        
+        guessesSoFar = [];
+        //computer chooses a new number
+        compGuess = computerOptions[Math.floor(Math.random() * computerOptions.length)];
     
     }
     
