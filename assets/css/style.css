@@ -1,6 +1,17 @@
 .container {
-    border: 5px solid blue;
-    background-image: url("../images/Crystal-Ball.png");
-    width: 100%;
+    border: 3px dotted cornflowerblue;
+    
+    width: 80%;
     height:auto;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-style: italic;
+}
+
+#game {
+    text-align: center;
+    line-height: 15px;
 }
