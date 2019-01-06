@@ -65,7 +65,7 @@ document.onkeyup = function(event) {
     "<p>Losses: " + losses + "</p>" +
     "<p>Guesses Left: " + guessesLeft + "</p>" +
     "<p>Your Guesses so far: " + guessesSoFar + "</p>" +
-    "<div><img src='images/Crystal-Ball.png' alt='Blue crystal ball'></div>";
+    "<div><img src='assets/images/Crystal-Ball.png' alt='Blue crystal ball'></div>";
     //set the inner HTML contents of the ID game to the results string
     document.getElementById("game").innerHTML = results;
 
